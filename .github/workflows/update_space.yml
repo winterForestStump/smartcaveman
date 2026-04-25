@@ -21,12 +21,11 @@ jobs:
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
-        # Pinning huggingface_hub prevents the HfFolder ImportError
-        pip install "huggingface_hub<0.29.0" gradio
+        # We pin the hub to 0.28.1 to fix the ImportError
+        pip install "huggingface_hub==0.28.1" gradio
 
     - name: Deploy to Spaces
-      # DO NOT run a separate python login command here.
-      # The line below handles the login automatically.
       env:
+        # Verify this secret name is EXACTLY as written in GitHub Settings
         HF_TOKEN: ${{ secrets.HF_TOKEN }} 
       run: gradio deploy

@@ -1,3 +1,9 @@
+---
+title: Smartcaveman
+app_file: app.py
+sdk: gradio
+sdk_version: 6.13.0
+---
 Caveman version of Warren E. Buffett letters to shareholders. official letters source: [Berkshire Hathaway Inc. Website](https://www.berkshirehathaway.com/letters/letters.html)
 
 link to gradio application

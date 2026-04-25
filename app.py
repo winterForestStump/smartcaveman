@@ -53,9 +53,9 @@ def show_stats(df):
         cave_len = df['temp_1.0'].str.len().sum()
         saving = (text_len - cave_len) / text_len if text_len > 0 else 0
         
-        st.sidebar.metric("Original Chars", f"{text_len:,}")
-        st.sidebar.metric("Caveman Chars", f"{cave_len:,}")
-        st.sidebar.metric("Reduction", f"{saving:.1%}")
+        st.sidebar.metric("original words", f"{text_len:,}")
+        st.sidebar.metric("caveman words", f"{cave_len:,}")
+        st.sidebar.metric("reduction", f"{saving:.1%}")
 
 # --- MAIN CONTENT: 1977 LETTER ONLY ---
 st.markdown("### Warren Buffett 1977 Shareholder Letter. by smart caveman")

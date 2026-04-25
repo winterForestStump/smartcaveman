@@ -21,11 +21,9 @@ jobs:
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
-        # We pin the hub to 0.28.1 to fix the ImportError
-        pip install "huggingface_hub==0.28.1" gradio
+        pip install gradio==4.44.1 huggingface_hub==0.25.2
 
     - name: Deploy to Spaces
       env:
-        # Verify this secret name is EXACTLY as written in GitHub Settings
-        HF_TOKEN: ${{ secrets.HF_TOKEN }} 
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
       run: gradio deploy

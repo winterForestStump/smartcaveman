@@ -1,12 +1,6 @@
----
-title: Smartcaveman
-app_file: app.py
-sdk: gradio
-sdk_version: 6.13.0
----
 Caveman version of Warren E. Buffett letters to shareholders. official letters source: [Berkshire Hathaway Inc. Website](https://www.berkshirehathaway.com/letters/letters.html)
 
-link to gradio application
+Link to sstreamlit application to read a letter: https://smartcaveman.streamlit.app/
 
 Setup: 
 * [qwen-3-14b model](https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit) using unsloth to run on free google colab tier

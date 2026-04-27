@@ -34,7 +34,7 @@ def load_data(file_path):
         for col in ['text']:
             if col in df.columns:
                 # Handle formatting and escape dollar signs for LaTeX safety
-                df[col] = df[col].fillna("").str.replace('\n\n', '\n', regex=False).str.replace('$', '\$', regex=False).str.replace('                                    ', '', regex=False)
+                df[col] = df[col].fillna("").str.replace('\n\n', '\n', regex=False).str.replace('\n', '', regex=False).str.replace('$', '\$', regex=False).str.replace('                                    ', '', regex=False)
         for col in ['temp_1.0']:
             if col in df.columns:
                 # Handle formatting and escape dollar signs for LaTeX safety

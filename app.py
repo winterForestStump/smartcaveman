@@ -62,6 +62,11 @@ csv_files = {
         "path": "results/SAP_caveman.csv",  # CHANGE THIS TO YOUR ACTUAL FILE PATH
         "source_link": "https://www.lobbyregister.bundestag.de/media/2c/d5/710485/SAP-Integrated-Report-2025.pdf",  # UPDATE WITH CORRECT LINK
         "source_text": "view original CEO letter on 2025 SAP Integrated Report (pages 5-6)"
+    },
+    "Open letter to SpaceX's board": {
+        "path": "results/comptroller_caveman.csv",  # CHANGE THIS TO YOUR ACTUAL FILE PATH
+        "source_link": "https://www.osc.ny.gov/files/press/pdf/spacex-ipo-letter.pdf",  # UPDATE WITH CORRECT LINK
+        "source_text": "view original pre-IPO investor governance letter to SpaceX's board and leadership"
     }
 }
 
